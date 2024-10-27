@@ -2,7 +2,6 @@
 
 
 
-
 The project is a **Spring-based Rule Engine** designed to dynamically define, store, and evaluate logical rules, using an Abstract Syntax Tree (AST) structure to parse and apply complex conditions based on user-defined criteria. The rule engine provides flexible support for creating, combining, and evaluating logical expressions involving comparison, string, and logical operators.
 
 ### Key Features
