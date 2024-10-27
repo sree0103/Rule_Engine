@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Combine Rules</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Combine Rule</h1>
+        <form action="#" th:action="@{/rules/combine}" method="post">
+            <div class="form-group">
+                <label for="ruleIds">Rule IDs (comma-separated):</label>
+                <input type="text" id="ruleIds" name="ruleIds" required/>
+            </div>
+            <button type="submit">Combine</button>
+        </form>
+        <a href="/rules/create">Create Rule</a>
+        <a href="/rules/evaluate">Evaluate Rule</a>
+    </div>
+</body>
+</html>

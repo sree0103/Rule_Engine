@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Rule Result</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/result.css}">
+</head>
+<body>
+    <h1>Rule Result</h1>
+    
+    <div th:if="${response.status == 'success'}">
+        <p>Rule created successfully!</p>
+        <p>Node: <span th:text="${response.node}"></span></p>
+    </div>
+
+    <div th:if="${response.status == 'error'}">
+        <p>Error creating rule: <span th:text="${response.message}"></span></p>
+    </div>
+    
+    <a href="/rules/create">Create another rule</a>
+</body>
+</html>
